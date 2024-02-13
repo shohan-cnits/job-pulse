@@ -385,5 +385,100 @@ color: var(--secondary-color);
 }
 
 
+@media screen and (max-width:770px) {
+    .recent_job_content_texts a {
+        display: block;
+        text-align: center;
+    }
+
+    .recent_job_content_text a  {
+        display: block;
+        text-align: center;
+    }
+
+    .recent_job_content_btn {
+        margin-top: 20px;
+    }
+}
 
 /* Recent Job End */
+
+/* Footer Start */
+#footer {
+    margin-top: 50px;
+    padding: 40px 0;
+    background: #103053;
+}
+
+.footer_heading h1 {
+  
+    font-family: var(--primary-font);
+    color: var(--white);
+}
+
+.footer_items ul {
+    list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+.footer_items ul li {
+    margin-top: 5px;
+}
+
+.footer_items ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--white);
+  transition: .4s ease;
+  font-weight: 500;
+   
+}
+
+.footer_items ul li a:hover{
+    color: var(--primary-color);
+}
+
+.address address{
+    font-size: 16px; 
+    color: var(--white);
+}
+
+.footer_contact a:nth-child(2){
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--white);
+    transition: .4s ease;
+}
+
+.footer_contact a:nth-child(2):hover{
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--primary-color);
+    transition: .4s ease;
+}
+
+.footer_contact a i {
+    font-size: 20px;
+    transition: .4s ease;
+}
+
+.footer_contact a i:hover{
+    color: var(--primary-color) !important;
+}
+/* Footer End */
+
+/* Copy Right Start */
+#copy {
+    padding: 10px 0;
+    background: var(--primary-color);
+}
+
+.copy_right h1{
+text-align: center;
+font-size: 16px;
+color: var(--secondary-color);
+}
+/* Copy Right End */
