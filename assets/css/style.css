@@ -125,12 +125,14 @@ color: var(--secondary-color);
 .compaine_cards {
     display: flex;
     gap: 30px;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .compaine_card {
     width: 20%;
     border: 1px solid #d9d9d9;
-    padding: 30px;
+    padding: 20px;
     margin-top: 50px;
     background: #ffffff;
     transition: .4s ease;
@@ -143,11 +145,39 @@ color: var(--secondary-color);
 .compaine_card  img {
     width: 100%;
 }
+
+@media screen and (max-width:770px) {
+    .compaine_cards {
+      
+     flex-direction: column;
+    }
+
+    .compaine_card  {
+        width: 100%;
+    }
+}
+
 /* Companies End */
 
 /* Recent Job Start */
 
 /* product menu tabs */
+
+.recent_job_heading  h1{
+    text-align: center;
+    font-family: var(--primary-font);
+    color: var(--secondary-color);
+}
+
+.recent_job_content {
+    padding: 30px;
+}
+
+.recent_job_content {
+    width: 100%;
+   
+    border: 1px solid var(--secondary-color);
+}
 .product_menu_tabs {
     display: flex;
     align-items: center;
@@ -186,10 +216,8 @@ color: var(--secondary-color);
   
   .product_menu_item_tab li.active,
   .product_menu_item_tab li:hover {
-    background: linear-gradient(120deg,
-        rgba(0, 44, 83, 1),
-        rgba(206, 133, 34, 1));
-    color: var(--bg-color);
+    background: var(--primary-color);
+    color: var(--white);
     border: 1px solid var(--bg-color);
   }
   
@@ -293,5 +321,69 @@ color: var(--secondary-color);
   .product_menu_content .product_menu_tab_content.active {
     display: block;
   }
+
+  .recent_job_content_text a:nth-child(1){
+  text-decoration: none;
+  font-size: 20px;
+  font-family: var(--primary-font);
+  color: var(--secondary-color);
+  background: none !important;
+  border: none !important;
   
+  }
+
+  .recent_job_content_text a {
+    margin: 6px;
+    padding: 10px 20px;
+    background: var(--primary-color);
+   border-radius: 4px;
+   text-decoration: none;
+   color: var(--white);
+   border: 1px solid var(--primary-color);
+   transition: .4s ease;
+  }
+
+  .recent_job_content_text a:hover{
+    background: var(--white);
+    color: var(--primary-color);
+  }
+
+.recent_job_content_btn a{
+    margin: 6px;
+    padding: 10px 20px;
+    background: var(--primary-color);
+   border-radius: 4px;
+   text-decoration: none;
+   color: var(--white);
+   border: 1px solid var(--primary-color);
+   transition: .4s ease;
+   font-weight: 500;
+}
+
+.recent_job_content_btn a:hover{
+    background: var(--white);
+    color: var(--primary-color);
+}
+
+.recent_job_content_texts a {
+    margin: 6px;
+    padding: 10px 20px;
+    background: var(--primary-color);
+   border-radius: 4px;
+   text-decoration: none;
+   color: var(--white);
+   border: 1px solid var(--primary-color);
+   transition: .4s ease;
+   font-weight: 500;
+}
+  
+
+
+.recent_job_content_texts a:hover{
+    background: var(--white);
+    color: var(--primary-color);
+}
+
+
+
 /* Recent Job End */
