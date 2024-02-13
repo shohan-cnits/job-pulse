@@ -176,7 +176,7 @@ color: var(--secondary-color);
 .recent_job_content {
     width: 100%;
    
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(--primary-color);
 }
 .product_menu_tabs {
     display: flex;
