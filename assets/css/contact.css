@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+:root{
+    --primary-color: #ff7000;
+    --secondary-color: #001a35;
+    --primary-font:"Poppins";
+    --white: #ffffff;
+}
+
+
+/* Nav Start */
+#main_nav {
+    background: var(--white);
+  
+}
+
+.navbar-brand img {
+    width: 130px;
+}
+
+.navbar-nav li {
+    padding-left: 15px;
+}
+
+.navbar-nav li  a {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--secondary-color);
+    font-family: var(--primary-font);
+    transition: .3s ease;
+}
+
+.navbar-nav li  a:hover{
+    color: var(--primary-color);
+}
+
+.navbar_btn a{
+    padding: 7px 20px;
+    background-color: #ff7000;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 15px;
+    transition: .3s ease;
+    border: 1px solid var(--primary-color);
+    
+}
+
+.navbar_btn a:nth-child(2){
+    margin-left: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 15px;
+}
+
+.navbar_btn a:hover{
+    background: var(--white);
+    color: var(--primary-color);
+}
+
+@media screen and (max-width:991px){
+    .navbar_btn a:nth-child(2){
+    display: block;
+    margin-left: 0px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.navbar_btn a {
+    display: block;
+    text-align: center;
+}
+    
+}
+/* Nav End */
+
+
+
+/* Hero  Start */
+#contact_hero {
+    background: url(../image/banner/home_banner.png);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.contact_hero_heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 28vh;
+
+}
+
+.contact_hero_heading h1 {
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-size: 45px;
+}
+
+/* Hero  End */
+
+/* Contact Start */
+#contact {
+    padding: 40px 0;
+}
+
+.address_heading h1 {
+    font-size: 45px;
+    font-family: var(--primary-font);
+    color: var(--secondary-color);
+}
+
+.address_content_phone {
+    margin-top: 30px;
+}
+
+.address_content_phone a {
+    text-decoration: none;
+    display: block;
+    margin-top: 5px;
+    font-size: 18px;
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.touch_wapper {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid var(--primary-color);
+    margin-top: 35px;
+}
+
+.get_touch form input {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+    padding: 6px;
+    outline: none;
+    border-color:  var(--primary-color);
+}
+
+.get_touch form textarea {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3/1;
+    padding: 6px;
+    outline: none;
+    border-color:  var(--primary-color);
+}
+
+/* .get_touch_btn {
+
+    width: 100%;
+    border-radius: 1px solid var(--primary-color);
+ 
+   
+} */
+
+.get_touch_btn  a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--white);
+    width: 100%;
+    padding: 7px;
+    transition:  .3s ease;
+    background: var(--primary-color);
+   border: 1px solid var(--primary-color);
+    border-radius: 5px;
+   
+}
+
+.get_touch_btn a:hover {
+    background: var(--white);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+  
+    
+}
+
+.contact_content_wapper {
+    margin-top: 40vh;
+}
+
+
+@media screen and (max-width:1111px){
+ 
+
+    .contact_content_wapper  {
+        margin-top: 20vh;
+    }
+
+
+    
+}
+
+@media screen and (max-width: 768px){
+ 
+    .contact_content_wapper  {
+        margin-top: 2vh;
+    }
+}
+/* Contact End */
+
+
+/* Companies Start */
+#companie {
+    padding: 40px 0;
+}
+
+.compainie_heading h1{
+text-align: center;
+font-family: var(--primary-font);
+color: var(--secondary-color);
+}
+
+.compaine_cards {
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.compaine_card {
+    width: 20%;
+    border: 1px solid #d9d9d9;
+    padding: 20px;
+    margin-top: 50px;
+    background: #ffffff;
+    transition: .4s ease;
+}
+
+.compaine_card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.compaine_card  img {
+    width: 100%;
+}
+
+@media screen and (max-width:770px) {
+    .compaine_cards {
+      
+     flex-direction: column;
+    }
+
+    .compaine_card  {
+        width: 100%;
+    }
+}
+
+/* Companies End */
+
+
+/* Footer Start */
+#footer {
+    margin-top: 50px;
+    padding: 40px 0;
+    background: #103053;
+}
+
+.footer_heading h1 {
+  
+    font-family: var(--primary-font);
+    color: var(--white);
+}
+
+.footer_items ul {
+    list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+.footer_items ul li {
+    margin-top: 5px;
+}
+
+.footer_items ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--white);
+  transition: .4s ease;
+  font-weight: 500;
+   
+}
+
+.footer_items ul li a:hover{
+    color: var(--primary-color);
+}
+
+.address address{
+    font-size: 16px; 
+    color: var(--white);
+}
+
+.footer_contact a:nth-child(2){
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--white);
+    transition: .4s ease;
+}
+
+.footer_contact a:nth-child(2):hover{
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--primary-color);
+    transition: .4s ease;
+}
+
+.footer_contact a i {
+    font-size: 20px;
+    transition: .4s ease;
+}
+
+.footer_contact a i:hover{
+    color: var(--primary-color) !important;
+}
+/* Footer End */
+
+/* Copy Right Start */
+#copy {
+    padding: 10px 0;
+    background: var(--primary-color);
+}
+
+.copy_right h1{
+text-align: center;
+font-size: 16px;
+color: var(--secondary-color);
+}
+/* Copy Right End */
