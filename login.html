@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Pulse / Contact</title>
+    <title>Loging page</title>
 
     <!-- Main Css Start -->
-    <link rel="stylesheet" href="./assets/css/contact.css">
+    <link rel="stylesheet" href="./assets/css/loging.css">
     <!-- Main Css End -->
 
     <!-- Bootstrap Css Link Start -->
@@ -51,7 +51,7 @@
                         </li>
                     </ul>
                     <div class="navbar_btn">
-                        <a href="./login.html">Login</a>
+                        <a href="#">Login</a>
                         <a href="#">Sing Up</a>
                     </div>
                 </div>
@@ -60,103 +60,47 @@
     </section>
     <!-- Navbar End -->
 
-    <!-- Hero Start -->
-    <section id="contact_hero">
+    <!-- Loging Start -->
+    <section id="loging">
         <div class="container">
-            <div class="contact_hero_heading">
-                <img src="./assets/image/companie_logo/compaine-logo-02.webp" alt="">
-                <p>Job Pulse is a cutting-edge job service company dedicated to revolutionizing the way individuals find
-                    employment and businesses hire talent.</p>
-            </div>
-        </div>
-    </section>
-    <!-- Hero End -->
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div class="loging_content">
+                        <form action="">
+                            <div class="email">
+                                <label for="">E-mail</label>
+                                <input type="email" class="mt-1" placeholder="Enter your e-mail">
+                            </div>
 
-    <!-- Contact Start -->
-    <section id="contact">
-        <div class="container">
-            <div class="contact_content">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="contact_content_wapper">
-                            <div class="address_heading mt-4">
-                                <h1>Contact Us
-                                </h1>
+                            <div class="password mt-3">
+                                <label for="">Password</label>
+                                <input type="password" class="mt-1" placeholder="At least 8 characters">
                             </div>
-                            <div class="address_content_phone">
-                                <a href="#">Address: Dhaka, Bangladesh
-                                </a>
-                                <a href="tel: 039304089">Phone: 01758595950
-                                </a>
-                                <a href="mailto:hxudyccgt">Emial: contact@jobpulse.com
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="address_heading mt-4">
-                            <h1>Get in Touch</h1>
-                        </div>
-                        <div class="touch_wapper">
 
-                            <div class="get_touch">
-                                <form action="">
-                                    <input type="text" placeholder="Your Name*">
-                                    <input type="email" placeholder="Your Email">
-                                    <input type="text" placeholder="Subject">
-                                    <input type="number" placeholder="Your Mobile">
-                                    <textarea name="" id=""></textarea>
-                                </form>
+                            <div class="loging_btn mt-3">
+                                <button>Sign in</button>
                             </div>
-                            <div class="row">
-                                <div class="col-md"></div>
-                                <div class="col-md"></div>
-                                <div class="col-md">
-                                    <div class="get_touch_btn mt-3">
-                                        <a href="#">Send</a>
-                                    </div>
-                                </div>
+                            <div class="loging_gmail mt-3">
+                                <button> <img src="./assets/icon/Group 22.svg" alt="" class="me-2"> Sign up with Google</button>
                             </div>
-                        </div>
+                            <div class="loging_github mt-3">
+                                <button><img src="./assets/icon/394187_github_icon.svg" class="me-2 github_image" alt="">Sign up with GitHub</button>
+                            </div>
+                            <div class="forget_password">
+                                <h5>Don’t have any account?<a href="#">Forget password</a></h5>
+                            </div>
+                        </form>
                     </div>
                 </div>
+                <div class="col-md-3"></div>
             </div>
         </div>
     </section>
-    <!-- Contact End -->
+    <!-- Loging End -->
 
-    <!-- Companies Start -->
-    <section id="companie">
-        <div class="container">
-            <div class="compainie_heading">
-                <h1>Companies believe in us
-                </h1>
-            </div>
-            <div class="compaine_content">
-                <div class="compaine_cards">
-                    <div class="compaine_card">
-                        <a href="#"><img src="./assets/image/companie_logo/compaine_logo_01.png" alt=""></a>
-                    </div>
-                    <div class="compaine_card">
-                        <a href="#"><img src="./assets/image/companie_logo/compaine_logo_02.png" alt=""></a>
-                    </div>
-                    <div class="compaine_card">
-                        <a href="#"><img src="./assets/image/companie_logo/compaine_logo_03.png" alt=""></a>
-                    </div>
-                    <div class="compaine_card">
-                        <a href="#"><img src="./assets/image/companie_logo/compaine_logo_04.png" alt=""></a>
-                    </div>
-                    <div class="compaine_card">
-                        <a href="#"><img src="./assets/image/companie_logo/compaine_logo_05.png" alt=""></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Companies End -->
-
-       <!-- Footer Start -->
-       <section id="footer">
+    <!-- Footer Start -->
+    <section id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-lg-4 mt-4">
@@ -190,21 +134,27 @@
                 <div class="col-md-6 col-lg-4 mt-4">
                     <div class="footer_heading">
                         <h1>Contact</h1>
+
                     </div>
+
                     <div class="address">
                         <address class="font-primary">
                             795 Folsom Ave, Suite 600<br>
                             San Francisco, CA 94107<br>
                         </address>
                     </div>
-                    <div class="footer_contact mt-3">
-                        <a href="#"><i class="fa-solid fa-phone" style="color: #ffffff;"></i></a>
-                        <a href="tel: 01678555"> +111 22-33-44</a>
+
+                    <div class="footer_icon_menu">
+                        <div class="footer_contact mt-3">
+                            <a href="#"><i class="fa-solid fa-phone" style="color: #ffffff;"></i></a>
+                            <a href="tel: 01678555"> +111 22-33-44</a>
+                        </div>
+                        <div class="footer_contact mt-2">
+                            <a href="#"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i></a>
+                            <a href="mailto:hxudyccgt"> noreply@canvas.com</a>
+                        </div>
                     </div>
-                    <div class="footer_contact mt-2">
-                        <a href="#"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i></a>
-                        <a href="mailto:hxudyccgt"> noreply@canvas.com</a>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -217,6 +167,13 @@
             <h1>Copyrights © 2024 All Rights Reserved by Codenext It.</h1>
         </div>
     </section>
+
     <!-- Copy Right End -->
+
+
+    <!-- Js Bootstrap Link  Start -->
+    <script src="./assets/css/bootstrap/bootstrap.min.js"></script>
+    <!-- Js Bootstrap Link  End-->
 </body>
+
 </html>

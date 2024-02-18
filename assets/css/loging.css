@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+:root {
+  --primary-color: #ff7000;
+  --secondary-color: #001a35;
+  --primary-font: "Poppins";
+  --white: #ffffff;
+}
+
+
+/* Nav Start */
+#main_nav {
+  background: var(--white);
+  box-shadow: 2px 2px 3px rgba(0,0,0,.1);
+
+}
+
+.navbar-brand img {
+  width: 130px;
+}
+
+.navbar-nav li {
+  padding-left: 15px;
+}
+
+.navbar-nav li a {
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--secondary-color);
+  font-family: var(--primary-font);
+  transition: .3s ease;
+}
+
+.navbar-nav li a:hover {
+  color: var(--primary-color);
+}
+
+.navbar_btn a {
+  padding: 7px 20px;
+  background-color: #ff7000;
+  border-radius: 5px;
+  text-decoration: none;
+  color: var(--white);
+  font-family: var(--primary-font);
+  font-size: 15px;
+  transition: .3s ease;
+  border: 1px solid var(--primary-color);
+
+}
+
+.navbar_btn a:nth-child(2) {
+  margin-left: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: var(--white);
+  font-family: var(--primary-font);
+  font-size: 15px;
+}
+
+.navbar_btn a:hover {
+  background: var(--white);
+  color: var(--primary-color);
+}
+
+@media screen and (max-width:991px) {
+  .navbar_btn a:nth-child(2) {
+    display: block;
+    margin-left: 0px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .navbar_btn a {
+    display: block;
+    text-align: center;
+  }
+
+}
+
+/* Nav End */
+
+/* Loging Start  */
+#loging {
+    padding: 50px 0px 0px 0px ;
+}
+
+.loging_content {
+ width: 100%;
+ border: 1px solid #0b11185d;
+ height: 450px;
+ padding: 40px;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.email label {
+    display: block;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.email input {
+    width: 100%;
+    display: block;
+    padding: 5px;
+    outline: none;
+}
+
+.password label {
+    display: block;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.password input {
+    width: 100%;
+    display: block;
+    padding: 5px;
+    outline: none;
+}
+
+.loging_btn button {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid var(--primary-color);
+    color: var(--white);
+    background: var(--primary-color);
+    transition: .3s ease;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.loging_btn button:hover{
+    background: var(--white);
+    color: var(--primary-color);
+}
+
+.loging_gmail button {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    background: var(--white);
+    transition: .3s ease;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.loging_gmail button:hover{
+    background: var(--primary-color);
+    color: var(--white);
+   
+}
+.loging_github button {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    background: var(--white);
+    transition: .3s ease;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.loging_github button:hover{
+    background: var(--primary-color);
+    color: var(--white);
+   
+}
+
+.github_image {
+    width: 33px;
+}
+
+.forget_password {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.forget_password h5 {
+    font-size: 13px;
+}
+
+@media screen and (max-width:991px) {
+    .loging_content {
+        height: auto;
+    }
+  
+  }
+
+@media screen and (max-width:501px) {
+    .forget_password h5 {
+        font-size: 12px;
+    }
+    .loging_github button {
+        font-size: 14px;
+    }
+
+    .loging_gmail button {
+        font-size: 14px;
+    }
+
+    .loging_btn button {
+        font-size: 14px;
+    }
+  }
+/* Loging End */
+
+/* Footer Start */
+#footer {
+    margin-top: 50px;
+    padding: 40px 0;
+    background: #103053;
+  }
+  
+  .footer_heading h1 {
+  text-align: center;
+    font-family: var(--primary-font);
+    color: var(--white);
+  }
+  
+  .footer_items ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+   
+  }
+  
+  .footer_items ul li {
+    margin-top: 5px;
+  }
+  
+  .footer_items ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--white);
+    transition: .4s ease;
+    font-weight: 500;
+    display: block;
+    text-align: center;
+    align-items: start;
+  
+  }
+  
+  .footer_items ul li a:hover {
+    color: var(--primary-color);
+  }
+  
+  .address address {
+    font-size: 16px;
+    color: var(--white);
+    text-align: center;
+  }
+  
+  .footer_contact a:nth-child(2) {
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--white);
+    transition: .4s ease;
+
+
+  }
+
+  .footer_icon_menu {
+  width: 60%;
+  margin: auto;
+
+  }
+  
+  .footer_contact a:nth-child(2):hover {
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--primary-color);
+    transition: .4s ease;
+
+  }
+  
+  .footer_contact a i {
+    font-size: 20px;
+    transition: .4s ease;
+  }
+  
+  .footer_contact a i:hover {
+    color: var(--primary-color) !important;
+  }
+  
+
+  @media screen and (max-width:1201px) {
+    .footer_icon_menu  {
+        width: 70%;
+    }
+  
+  }
+
+  @media screen and (max-width:601px) {
+    .footer_icon_menu  {
+        width: 55%;
+    }
+  
+  }
+  /* Footer End */
+  
+  /* Copy Right Start */
+  #copy {
+    padding: 10px 0;
+    background: var(--primary-color);
+  }
+  
+  .copy_right h1 {
+    text-align: center;
+    font-size: 16px;
+    color: var(--secondary-color);
+  }
+  
+  /* Copy Right End */
