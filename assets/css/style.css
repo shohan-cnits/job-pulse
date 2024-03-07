@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
-
 
 :root {
   --primary-color: #ff7000;
@@ -15,11 +13,9 @@
   --white: #ffffff;
 }
 
-
 /* Nav Start */
 #main_nav {
   background: var(--white);
-
 }
 
 .navbar-brand img {
@@ -35,7 +31,7 @@
   font-size: 18px;
   color: var(--secondary-color);
   font-family: var(--primary-font);
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
 .navbar-nav li a:hover {
@@ -50,9 +46,8 @@
   color: var(--white);
   font-family: var(--primary-font);
   font-size: 15px;
-  transition: .3s ease;
+  transition: 0.3s ease;
   border: 1px solid var(--primary-color);
-
 }
 
 .navbar_btn a:nth-child(2) {
@@ -69,7 +64,7 @@
   color: var(--primary-color);
 }
 
-@media screen and (max-width:991px) {
+@media screen and (max-width: 991px) {
   .navbar_btn a:nth-child(2) {
     display: block;
     margin-left: 0px;
@@ -81,27 +76,16 @@
     display: block;
     text-align: center;
   }
-
 }
 
 /* Nav End */
 
 /* Hero  Start */
-#hero {
-  background: url(../image/banner/home_banner-01.png);
-  width: 100%;
-  height: 100vh;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-
-}
 
 .hero_heading {
   display: block;
   align-items: center;
   padding-top: 28vh;
-
 }
 
 .hero_heading img {
@@ -116,8 +100,7 @@
   width: 650px;
 }
 
-
-@media screen and (max-width:401px) {
+@media screen and (max-width: 401px) {
   .hero_heading p {
     font-size: 13px;
   }
@@ -127,13 +110,11 @@
   }
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width: 900px) {
   .hero_heading p {
     font-size: 16px;
     width: 100%;
   }
-
-
 }
 
 /* Hero  End */
@@ -162,21 +143,20 @@
   padding: 20px;
   margin-top: 50px;
   background: #ffffff;
-  transition: .4s ease;
+  transition: 0.4s ease;
 }
 
 .compaine_card:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 6px 10px 0 rgba(0, 0, 0, 0.19),
-    0 6px 30px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19),
+    0 6px 10px 0 rgba(0, 0, 0, 0.19), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
 }
 
 .compaine_card img {
   width: 100%;
 }
 
-@media screen and (max-width:770px) {
+@media screen and (max-width: 770px) {
   .compaine_cards {
-
     flex-direction: column;
   }
 
@@ -204,7 +184,7 @@
 .recent_job_content {
   width: 100%;
   background: #f8f3f3;
-  border: 1px solid rgba(206, 133, 34, .8);
+  border: 1px solid rgba(206, 133, 34, 0.8);
 }
 
 .product_menu_tabs {
@@ -274,9 +254,11 @@
 }
 
 .product_tab_arrow_icon i:hover {
-  background: linear-gradient(120deg,
-      rgba(0, 44, 83, 1),
-      rgba(206, 133, 34, 1));
+  background: linear-gradient(
+    120deg,
+    rgba(0, 44, 83, 1),
+    rgba(206, 133, 34, 1)
+  );
   color: var(--bg-color);
   border: 1px solid var(--bg-color);
 }
@@ -319,7 +301,6 @@
   backface-visibility: hidden;
 }
 
-
 .product_menu_item:hover .product_menu_item img {
   opacity: 0.3;
 }
@@ -327,10 +308,6 @@
 .product_menu_item:hover .product_menu_item_btn {
   opacity: 1;
 }
-
-
-
-
 
 .product_menu_content .product_menu_tab_content {
   display: none;
@@ -358,7 +335,6 @@
   color: var(--secondary-color);
   background: none !important;
   border: none !important;
-
 }
 
 .recent_job_content_text a {
@@ -369,7 +345,7 @@
   text-decoration: none;
   color: var(--white);
   border: 1px solid var(--primary-color);
-  transition: .4s ease;
+  transition: 0.4s ease;
 }
 
 .recent_job_content_text a:hover {
@@ -383,7 +359,6 @@
   align-items: end;
 }
 
-
 .recent_job_content_btn a {
   margin: 6px;
   padding: 10px 20px;
@@ -392,7 +367,7 @@
   text-decoration: none;
   color: var(--white);
   border: 1px solid var(--primary-color);
-  transition: .4s ease;
+  transition: 0.4s ease;
   font-weight: 500;
 }
 
@@ -409,25 +384,22 @@
   text-decoration: none;
   color: var(--white);
   border: 1px solid var(--primary-color);
-  transition: .4s ease;
+  transition: 0.4s ease;
   font-weight: 500;
 }
-
-
 
 .recent_job_content_texts a:hover {
   background: var(--white);
   color: var(--primary-color);
 }
 
-
 .job_wapper {
-  border: 1px solid rgba(206, 133, 34, .8);
+  border: 1px solid rgba(206, 133, 34, 0.8);
   padding: 40px 40px 40px 40px;
   background: #f8f3f3;
 }
 
-@media screen and (max-width:770px) {
+@media screen and (max-width: 770px) {
   .recent_job_content_texts a {
     display: block;
     text-align: center;
@@ -451,7 +423,6 @@
 
 /* Recent Job End */
 
-
 /* Copy Right Start */
 #copy {
   padding: 10px 0;
@@ -464,12 +435,10 @@
   color: var(--secondary-color);
 }
 
-
-@media screen and (max-width:601px) {
+@media screen and (max-width: 601px) {
   .copy_right h1 {
     font-size: 13px;
   }
-
 }
 
 /* Copy Right End */

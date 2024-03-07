@@ -1,281 +1,247 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-
-
-:root{
-    --primary-color: #ff7000;
-    --secondary-color: #001a35;
-    --primary-font:"Poppins";
-    --white: #ffffff;
+:root {
+  --primary-color: #ff7000;
+  --secondary-color: #001a35;
+  --primary-font: "Poppins";
+  --white: #ffffff;
 }
-
 
 /* Nav Start */
 #main_nav {
-    background: var(--white);
-  
+  background: var(--white);
 }
 
 .navbar-brand img {
-    width: 130px;
+  width: 130px;
 }
 
 .navbar-nav li {
-    padding-left: 15px;
+  padding-left: 15px;
 }
 
-.navbar-nav li  a {
-    font-weight: 500;
-    font-size: 18px;
-    color: var(--secondary-color);
-    font-family: var(--primary-font);
-    transition: .3s ease;
+.navbar-nav li a {
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--secondary-color);
+  font-family: var(--primary-font);
+  transition: 0.3s ease;
 }
 
-.navbar-nav li  a:hover{
-    color: var(--primary-color);
+.navbar-nav li a:hover {
+  color: var(--primary-color);
 }
 
-.navbar_btn a{
-    padding: 7px 20px;
-    background-color: #ff7000;
-    border-radius: 5px;
-    text-decoration: none;
-    color: var(--white);
-    font-family: var(--primary-font);
-    font-size: 15px;
-    transition: .3s ease;
-    border: 1px solid var(--primary-color);
-    
+.navbar_btn a {
+  padding: 7px 20px;
+  background-color: #ff7000;
+  border-radius: 5px;
+  text-decoration: none;
+  color: var(--white);
+  font-family: var(--primary-font);
+  font-size: 15px;
+  transition: 0.3s ease;
+  border: 1px solid var(--primary-color);
 }
 
-.navbar_btn a:nth-child(2){
-    margin-left: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    color: var(--white);
-    font-family: var(--primary-font);
-    font-size: 15px;
+.navbar_btn a:nth-child(2) {
+  margin-left: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: var(--white);
+  font-family: var(--primary-font);
+  font-size: 15px;
 }
 
-.navbar_btn a:hover{
-    background: var(--white);
-    color: var(--primary-color);
+.navbar_btn a:hover {
+  background: var(--white);
+  color: var(--primary-color);
 }
 
-@media screen and (max-width:991px){
-    .navbar_btn a:nth-child(2){
+@media screen and (max-width: 991px) {
+  .navbar_btn a:nth-child(2) {
     display: block;
     margin-left: 0px;
     margin-top: 20px;
     text-align: center;
-}
+  }
 
-.navbar_btn a {
+  .navbar_btn a {
     display: block;
     text-align: center;
-}
-    
+  }
 }
 /* Nav End */
 
-
-
 /* Hero  Start */
-#about_hero {
-    background: url(../image/banner/home_banner-01.png);
-    width: 100%;
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  
-  }
-  
-  .about_hero_heading {
-    display: block;
-    align-items: center;
-    padding-top: 28vh;
-  
-  }
-  
-  .about_hero_heading img {
-    width: 350px;
-  }
-  
-  .about_hero_heading p {
-    color: var(--white);
-    font-family: var(--primary-font);
-    font-size: 16px;
-    margin-top: 30px;
-    width: 650px;
-  }
-  
-  
-  @media screen and (max-width:401px) {
-    .about_hero_heading p {
-      font-size: 13px;
-    }
-  
-    .about_hero_heading img {
-      width: 300px;
-    }
-  }
-  
-  @media screen and (max-width:900px) {
-    .about_hero_heading p {
-      font-size: 16px;
-      width: 100%;
-    }
-  
-  
-  }
-/* Hero  End */
 
+.about_hero_heading {
+  display: block;
+  align-items: center;
+  padding-top: 28vh;
+}
+
+.about_hero_heading img {
+  width: 350px;
+}
+
+.about_hero_heading p {
+  color: var(--white);
+  font-family: var(--primary-font);
+  font-size: 16px;
+  margin-top: 30px;
+  width: 650px;
+}
+
+@media screen and (max-width: 401px) {
+  .about_hero_heading p {
+    font-size: 13px;
+  }
+
+  .about_hero_heading img {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .about_hero_heading p {
+    font-size: 16px;
+    width: 100%;
+  }
+}
+/* Hero  End */
 
 /* History Start */
 #history {
-    padding: 40px 0;
+  padding: 40px 0;
 }
 
 .history_content {
-    border: 1px solid var(--primary-color);
-    padding: 20px;
+  border: 1px solid var(--primary-color);
+  padding: 20px;
 }
 
 .history_content p {
-    font-size: 15px;
-    font-family: var(--primary-font);
-    color: var(--secondary-color);
-    line-height: 25px;
+  font-size: 15px;
+  font-family: var(--primary-font);
+  color: var(--secondary-color);
+  line-height: 25px;
 }
 
 .history_heading h2 {
-    font-weight: 500;
-    color: var(--secondary-color);
-    font-family: var(--primary-font);
+  font-weight: 500;
+  color: var(--secondary-color);
+  font-family: var(--primary-font);
 }
 
-
-@media screen and (max-width:500px){
-    .history_content p {
-        font-size: 12px;
-        line-height: 20px;
-    }
-    
+@media screen and (max-width: 500px) {
+  .history_content p {
+    font-size: 12px;
+    line-height: 20px;
+  }
 }
 /* History End */
-
 
 /* History Start */
 #vision {
-    padding: 40px 0;
+  padding: 40px 0;
 }
 
 .vision_content {
-    border: 1px solid var(--primary-color);
-    padding: 20px;
+  border: 1px solid var(--primary-color);
+  padding: 20px;
 }
 
 .vision_content p {
-    font-size: 15px;
-    font-family: var(--primary-font);
-    color: var(--secondary-color);
-    line-height: 25px;
+  font-size: 15px;
+  font-family: var(--primary-font);
+  color: var(--secondary-color);
+  line-height: 25px;
 }
 
 .vision_heading h2 {
-    font-weight: 500;
-    color: var(--secondary-color);
-    font-family: var(--primary-font);
+  font-weight: 500;
+  color: var(--secondary-color);
+  font-family: var(--primary-font);
 }
 
-
-@media screen and (max-width:500px){
-    .vision_content p {
-        font-size: 12px;
-        line-height: 20px;
-    }
-    
+@media screen and (max-width: 500px) {
+  .vision_content p {
+    font-size: 12px;
+    line-height: 20px;
+  }
 }
 /* History End */
 
-
 /* Companies Start */
 #companie {
-    padding: 40px 0;
+  padding: 40px 0;
 }
 
-.compainie_heading h1{
-text-align: center;
-font-family: var(--primary-font);
-color: var(--secondary-color);
+.compainie_heading h1 {
+  text-align: center;
+  font-family: var(--primary-font);
+  color: var(--secondary-color);
 }
 
 .compaine_cards {
-    display: flex;
-    gap: 30px;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  gap: 30px;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .compaine_card {
-    width: 20%;
-    border: 1px solid #d9d9d9;
-    padding: 20px;
-    margin-top: 50px;
-    background: #ffffff;
-    transition: .4s ease;
+  width: 20%;
+  border: 1px solid #d9d9d9;
+  padding: 20px;
+  margin-top: 50px;
+  background: #ffffff;
+  transition: 0.4s ease;
 }
 
 .compaine_card:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.compaine_card  img {
+.compaine_card img {
+  width: 100%;
+}
+
+@media screen and (max-width: 770px) {
+  .compaine_cards {
+    flex-direction: column;
+  }
+
+  .compaine_card {
     width: 100%;
-}
-
-@media screen and (max-width:770px) {
-    .compaine_cards {
-      
-     flex-direction: column;
-    }
-
-    .compaine_card  {
-        width: 100%;
-    }
+  }
 }
 
 /* Companies End */
 
+/* Copy Right Start */
+#copy {
+  padding: 10px 0;
+  background: var(--primary-color);
+}
 
+.copy_right h1 {
+  text-align: center;
+  font-size: 16px;
+  color: var(--secondary-color);
+}
 
-  
-  /* Copy Right Start */
-  #copy {
-    padding: 10px 0;
-    background: var(--primary-color);
-  }
-  
+@media screen and (max-width: 601px) {
   .copy_right h1 {
-    text-align: center;
-    font-size: 16px;
-    color: var(--secondary-color);
+    font-size: 13px;
   }
-  
-  
-  @media screen and (max-width:601px) {
-    .copy_right h1 {
-      font-size: 13px;
-    }
-  
-  }
-  
-  /* Copy Right End */
+}
+
+/* Copy Right End */
