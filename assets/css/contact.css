@@ -15,7 +15,7 @@
 
 /* Nav Start */
 #main_nav {
-  background: var(--white);
+  background: var(--white) !important;
 }
 
 .navbar-brand img {
@@ -77,20 +77,36 @@
     text-align: center;
   }
 }
+
 /* Nav End */
 
 /* Hero  Start */
-.contact_hero_heading {
-  display: block;
-  align-items: center;
-  padding-top: 28vh;
+
+#hero {
+  margin-top: 60px;
+}
+.hero_image img {
+  width: 100%;
+  height: 100vh;
 }
 
-.contact_hero_heading img {
+.hero_image {
+  position: relative;
+}
+
+.hero_heading {
+  display: block;
+  align-items: center;
+  left: 9%;
+  position: absolute;
+  top: 35%;
+}
+
+.hero_heading img {
   width: 350px;
 }
 
-.contact_hero_heading p {
+.hero_heading p {
   color: var(--white);
   font-family: var(--primary-font);
   font-size: 16px;
@@ -99,17 +115,17 @@
 }
 
 @media screen and (max-width: 401px) {
-  .contact_hero_heading p {
+  .hero_heading p {
     font-size: 13px;
   }
 
-  .contact_hero_heading img {
+  .hero_heading img {
     width: 300px;
   }
 }
 
 @media screen and (max-width: 900px) {
-  .contact_hero_heading p {
+  .hero_heading p {
     font-size: 16px;
     width: 100%;
   }

@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
-
 
 :root {
   --primary-color: #ff7000;
@@ -15,12 +13,9 @@
   --white: #ffffff;
 }
 
-
 /* Nav Start */
 #main_nav {
-  background: var(--white);
-  box-shadow: 2px 2px 3px rgba(0, 0, 0, .1);
-
+  background: var(--white) !important;
 }
 
 .navbar-brand img {
@@ -36,7 +31,7 @@
   font-size: 18px;
   color: var(--secondary-color);
   font-family: var(--primary-font);
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
 .navbar-nav li a:hover {
@@ -51,9 +46,8 @@
   color: var(--white);
   font-family: var(--primary-font);
   font-size: 15px;
-  transition: .3s ease;
+  transition: 0.3s ease;
   border: 1px solid var(--primary-color);
-
 }
 
 .navbar_btn a:nth-child(2) {
@@ -70,7 +64,7 @@
   color: var(--primary-color);
 }
 
-@media screen and (max-width:991px) {
+@media screen and (max-width: 991px) {
   .navbar_btn a:nth-child(2) {
     display: block;
     margin-left: 0px;
@@ -82,136 +76,178 @@
     display: block;
     text-align: center;
   }
-
 }
 
 /* Nav End */
 
+/* Hero  Start */
+
+#hero {
+  margin-top: 60px;
+}
+.hero_image img {
+  width: 100%;
+  height: 100vh;
+}
+
+.hero_image {
+  position: relative;
+}
+
+.hero_heading {
+  display: block;
+  align-items: center;
+  left: 9%;
+  position: absolute;
+  top: 35%;
+}
+
+.hero_heading img {
+  width: 350px;
+}
+
+.hero_heading p {
+  color: var(--white);
+  font-family: var(--primary-font);
+  font-size: 16px;
+  margin-top: 30px;
+  width: 650px;
+}
+
+@media screen and (max-width: 401px) {
+  .hero_heading p {
+    font-size: 13px;
+  }
+
+  .hero_heading img {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .hero_heading p {
+    font-size: 16px;
+    width: 100%;
+  }
+}
+
+/* Hero  End */
+
 /* Footer Start */
 #footer {
-    margin-top: 50px;
-    padding: 40px 0;
-    background: #103053;
-  }
-  
-  .footer_heading h1 {
-    text-align: center;
-    font-family: var(--primary-font);
-    color: var(--white);
-  }
-  
-  .footer_items ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  
-  }
-  
-  .footer_items ul li {
-    margin-top: 5px;
-  }
-  
-  .footer_items ul li a {
-    text-decoration: none;
-    font-size: 16px;
-    color: var(--white);
-    transition: .4s ease;
-    font-weight: 500;
-    display: block;
-    text-align: center;
-    align-items: start;
-  
-  }
-  
-  .footer_items ul li a:hover {
-    color: var(--primary-color);
-  }
-  
-  .address address {
-    font-size: 16px;
-    color: var(--white);
-    text-align: end;
-  }
-  
-  .footer_contact a:nth-child(2) {
-    margin-left: 10px;
-    text-decoration: none;
-    font-size: 18px;
-    color: var(--white);
-    transition: .4s ease;
-  
-  
-  }
-  
-  .footer_icon_menu {
+  margin-top: 50px;
+  padding: 40px 0;
+  background: #103053;
+}
+
+.footer_heading h1 {
+  text-align: center;
+  font-family: var(--primary-font);
+  color: var(--white);
+}
+
+.footer_items ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer_items ul li {
+  margin-top: 5px;
+}
+
+.footer_items ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--white);
+  transition: 0.4s ease;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+  align-items: start;
+}
+
+.footer_items ul li a:hover {
+  color: var(--primary-color);
+}
+
+.address address {
+  font-size: 16px;
+  color: var(--white);
+  text-align: end;
+}
+
+.footer_contact a:nth-child(2) {
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--white);
+  transition: 0.4s ease;
+}
+
+.footer_icon_menu {
   float: right;
+}
+
+.footer_contact a:nth-child(2):hover {
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--primary-color);
+  transition: 0.4s ease;
+}
+
+.footer_contact a i {
+  font-size: 20px;
+  transition: 0.4s ease;
+}
+
+.footer_contact a i:hover {
+  color: var(--primary-color) !important;
+}
+
+@media screen and (max-width: 1201px) {
+  .footer_icon_menu {
+    width: 70%;
   }
-  
-  .footer_contact a:nth-child(2):hover {
-    margin-left: 10px;
-    text-decoration: none;
-    font-size: 18px;
-    color: var(--primary-color);
-    transition: .4s ease;
-  
+}
+
+@media screen and (max-width: 767px) {
+  .address address {
+    text-align: start;
   }
-  
-  .footer_contact a i {
-    font-size: 20px;
-    transition: .4s ease;
+
+  .footer_items ul li a {
+    text-align: start;
+    display: inline-block;
   }
-  
-  .footer_contact a i:hover {
-    color: var(--primary-color) !important;
+
+  .footer_heading h1 {
+    text-align: start !important;
   }
-  
-  
-  @media screen and (max-width:1201px) {
-    .footer_icon_menu {
-      width: 70%;
-    }
-  
+  .footer_icon_menu {
+    width: 100%;
   }
-  
-  
-  @media screen and (max-width:767px) {
-    .address address {
-      text-align: start;
-    }
-  
-    .footer_items ul li a {
-      text-align: start;
-      display: inline-block;
-    }
-  
-   .footer_heading h1 {
-      text-align: start !important;
-    }
-    .footer_icon_menu {
-      width: 100%;
-    }
-  }
-  
-  /* Footer End */
-  
-  /* Copy Right Start */
-  #copy {
-    padding: 10px 0;
-    background: var(--primary-color);
-  }
-  
+}
+
+/* Footer End */
+
+/* Copy Right Start */
+#copy {
+  padding: 10px 0;
+  background: var(--primary-color);
+}
+
+.copy_right h1 {
+  text-align: center;
+  font-size: 16px;
+  color: var(--secondary-color);
+}
+
+@media screen and (max-width: 601px) {
   .copy_right h1 {
-    text-align: center;
-    font-size: 16px;
-    color: var(--secondary-color);
+    font-size: 13px;
   }
-  
-  
-  @media screen and (max-width:601px) {
-    .copy_right h1 {
-      font-size: 13px;
-    }
-  
-  }
-  
-  /* Copy Right End */
+}
+
+/* Copy Right End */

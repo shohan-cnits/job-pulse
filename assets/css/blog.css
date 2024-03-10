@@ -82,10 +82,24 @@
 
 /* Hero  Start */
 
+#hero {
+  margin-top: 60px;
+}
+.hero_image img {
+  width: 100%;
+  height: 100vh;
+}
+
+.hero_image {
+  position: relative;
+}
+
 .hero_heading {
   display: block;
   align-items: center;
-  padding-top: 28vh;
+  left: 9%;
+  position: absolute;
+  top: 35%;
 }
 
 .hero_heading img {
