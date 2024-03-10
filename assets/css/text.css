@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #ff7000;
+  --secondary-color: #001a35;
+  --primary-font: "Poppins";
+  --white: #ffffff;
+}
+
+.text_wrapper {
+  padding: 50px 0;
+}
+
+.text_heading h1 {
+  font-size: 40px;
+  font-family: var(--primary-font);
+  color: #001a35;
+  display: inline-block;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.text_heading_text p {
+  font-size: 22px;
+  font-family: var(--primary-font);
+}
+
+.text_heading_text_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40vh;
+}
+
+.text_heading_text_btn a {
+  display: inline-block;
+  padding: 5px 35px;
+  border: 2px solid var(--primary-color);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 5px;
+  color: var(--primary-color);
+  transition: 0.5s;
+}
+
+.text_heading_text_btn a:hover {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+@media screen and (max-width: 575px) {
+  .text_heading_text_btn {
+    margin-top: 5vh;
+  }
+}
